@@ -10,7 +10,7 @@ class color:
    UNDERLINE = '\033[4m'
    END = '\033[0m'
    
-   board = [1,2,3,4,5,6,7,8,9]
+  board = [1,2,3,4,5,6,7,8,9]
 count = 0
 def Board():
     print '+-----------+'
@@ -26,12 +26,12 @@ def userdata():
     Marker = raw_input("Enter your Symbol: 'X' or 'O':")
     if(Marker == 'X' or Marker == 'O'):
         board[Position-1] = Marker
+        Board()
     else:
-        print color.BOLD + "Please Re-enter the valid inputs" + color.UNDERLINE
+        print color.BOLD + "Please Re-enter the valid inputs" + color.END
         userdata()
-    Board()
     
-
+    
 def start_tic_tac_toe():
     global count
     global board
