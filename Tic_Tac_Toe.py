@@ -10,7 +10,7 @@ class color:
    UNDERLINE = '\033[4m'
    END = '\033[0m'
    
-  board = [1,2,3,4,5,6,7,8,9]
+board = [1,2,3,4,5,6,7,8,9]
 count = 0
 def Board():
     print '+-----------+'
